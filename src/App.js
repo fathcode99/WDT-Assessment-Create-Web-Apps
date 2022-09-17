@@ -11,7 +11,7 @@ import DetailPages from './pages/detailPages';
 import CartPages from './pages/cartPages';
 import FavoritePages from './pages/favoritePages';
 
-const url = 'http://localhost:2000'
+const url = 'https://dbassessmentwdt.herokuapp.com'
 
 function App() {
   const dispatch = useDispatch()
@@ -24,7 +24,7 @@ function App() {
           payload: res.data
         })
       })
-  });
+  }, [dispatch]);
 
   return (
     <div className='App'>

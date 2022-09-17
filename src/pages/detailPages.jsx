@@ -12,7 +12,7 @@ import Card from '../component/cardProducts';
 
 import "./pagesStyle.css"
 
-const url = 'http://localhost:2000'
+const url = 'https://dbassessmentwdt.herokuapp.com'
 
 export default function Detail() {
     const state = useSelector((state) => state.reducer)

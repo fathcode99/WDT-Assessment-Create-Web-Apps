@@ -9,7 +9,7 @@ import {
 import NavBar from '../component/navbar'
 import './pagesStyle.css'
 
-const url = 'http://localhost:2000'
+const url = 'https://dbassessmentwdt.herokuapp.com'
 
 export default function Cart() {
     const state = useSelector((state) => state.reducer)

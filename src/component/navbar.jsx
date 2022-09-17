@@ -33,7 +33,7 @@ export default function NavBar() {
                <Nav.Link as={Link} to="/favorite">Product Favorite</Nav.Link>
             </Nav>
 
-            {state.username ?
+            {state.id ?
                <Nav className="menu-login-navbar me-auto">
                   <Nav.Link as={Link} to="/register">{state.username}</Nav.Link>
                   <Nav.Link onClick={onLogOut}>Log out</Nav.Link>

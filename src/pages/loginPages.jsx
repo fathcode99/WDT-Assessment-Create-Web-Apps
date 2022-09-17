@@ -9,7 +9,7 @@ import Axios from 'axios'
 
 import { useDispatch, useSelector } from "react-redux";
 
-const url = "http://localhost:2000"
+const url = "https://dbassessmentwdt.herokuapp.com"
 
 export default function Login() {
     const state = useSelector((state) => state.reducer)

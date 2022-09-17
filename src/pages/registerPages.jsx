@@ -8,7 +8,7 @@ import {
     Modal, Nav, Button
 } from 'react-bootstrap'
 
-const url = 'http://localhost:2000'
+const url = 'https://dbassessmentwdt.herokuapp.com'
 
 export default function Register() {
     const state = useSelector((state) => state.reducer)

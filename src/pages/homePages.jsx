@@ -12,7 +12,7 @@ import {
 
 import './pagesStyle.css'
 
-const url = 'http://localhost:2000'
+const url = 'https://dbassessmentwdt.herokuapp.com'
 
 export default function HomePages() {
     const [index, setIndex] = useState(0);
