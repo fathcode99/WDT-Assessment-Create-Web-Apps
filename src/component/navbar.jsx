@@ -23,15 +23,8 @@ export default function NavBar() {
    return (
       <Navbar bg="dark" variant="dark">
          <Container fluid className="px-4">
-            <Navbar.Brand href="#home">
-               <img
-                  alt=""
-                  src="/logo.svg"
-                  width="30"
-                  height="30"
-                  className="d-inline-block align-top"
-               />{' '}
-               React Bootstrap
+            <Navbar.Brand as={Link} to="/">
+               Assessment Market
             </Navbar.Brand>
 
             <Nav className="menu-navbar me-auto">
