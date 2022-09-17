@@ -126,13 +126,13 @@ export default function Favorite() {
                     <>
                         {!state.id ?
                             <div className="empty-cart">
-                                <i className="fa-solid fa-triangle-exclamation py-3"></i>Please Login first to see your Shopping Cart !
+                                <i className="fa-solid fa-triangle-exclamation py-3"></i>Please Login first to see your Favorite Cart !
                                 <Button className="my-2" variant="outline-primary" size="sm" as={Link} to="/login">Go to Log In</Button>
                             </div>
                             :
                             <>
                                 <div className="empty-cart">
-                                    <i className="fa-solid fa-triangle-exclamation my-3"></i>Your Shopping Cart is Empty !
+                                    <i className="fa-solid fa-triangle-exclamation my-3"></i>Your Favorite List is Empty !
                                     <Button className="my-2" variant="outline-primary" size="sm" as={Link} to="/">Back to Shop</Button>
                                 </div>
                             </>

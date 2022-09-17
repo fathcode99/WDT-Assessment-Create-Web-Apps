@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "URBAN CASUAL FASHION WHITE RED SNEAKER",
+      "name": "COOFANDY MEN'S SUIT",
       "category": "",
       "brand": "SNEAKER",
       "rating": [],
@@ -11,12 +11,12 @@
       "price": 1000000,
       "stock": 13,
       "images": [
-        "https://i.pinimg.com/564x/79/98/06/79980650b074c736ccd6d35b7f8680ac.jpg"
+        "https://i.pinimg.com/564x/73/6b/f0/736bf00df35c03f87ca9f2c03e9939fa.jpg"
       ]
     },
     {
       "id": 2,
-      "name": "URBAN CASUAL FASHION WHITE BLUE SNEAKER",
+      "name": "COOFANDY MENS GILET",
       "category": "",
       "brand": "SNEAKER",
       "rating": [],
@@ -25,12 +25,12 @@
       "price": 1000000,
       "stock": 10,
       "images": [
-        "https://i.pinimg.com/564x/97/c5/38/97c53868184b987b26f89b631bc9f25d.jpg"
+        "https://i.pinimg.com/564x/a8/df/12/a8df12490462985d5ddb05b18f302365.jpg"
       ]
     },
     {
       "id": 3,
-      "name": "URBAN CASUAL FASHION WHITE BLACK SNEAKER",
+      "name": "CARGO PANTS",
       "category": "",
       "brand": "SNEAKER",
       "rating": [],
@@ -39,7 +39,7 @@
       "price": 1000000,
       "stock": 9,
       "images": [
-        "https://i.pinimg.com/564x/42/eb/5a/42eb5a9bf7909352ae790064498b4be0.jpg"
+        "https://i.pinimg.com/564x/c5/c0/87/c5c087a51a89ee07f17d97227a46e6fa.jpg"
       ]
     },
     {
@@ -86,7 +86,7 @@
     },
     {
       "id": 7,
-      "name": "ADIDAS NMD R1",
+      "name": "CARGO PANTS SOLDIER",
       "category": "",
       "brand": "ADIDAS",
       "rating": [],
@@ -95,7 +95,7 @@
       "price": 2000000,
       "stock": 8,
       "images": [
-        "https://i.pinimg.com/564x/0d/4a/29/0d4a294f08b9baeed1e6fb4971614e60.jpg"
+        "https://i.pinimg.com/564x/04/ff/62/04ff62d9fc39ea8a335e3f786798fc55.jpg"
       ]
     },
     {
@@ -339,7 +339,7 @@
   ],
   "slider": [
     {
-      "img": "https://i.pinimg.com/564x/f2/ab/e5/f2abe5d9d2c659c5fcd0bfb89c010551.jpg",
+      "img": "https://i.pinimg.com/564x/6f/7c/ce/6f7ccebd6c0835df608565b8b9aa4a97.jpg",
       "title": "BEST PRODUCT THIS MONTH"
     },
     {
@@ -347,7 +347,7 @@
       "title": "BEST SELLING THIS MONTH"
     },
     {
-      "img": "https://i.pinimg.com/736x/f3/d3/bd/f3d3bd4ad90fa46b2c1fe2b26b9e46f0.jpg",
+      "img": "https://i.pinimg.com/564x/00/33/f5/0033f521ad7cba7dd1feebdf2b39cef4.jpg",
       "title": "BEST QUALITY IN THE WORLD"
     },
     {
@@ -391,37 +391,14 @@
       "role": "user",
       "cart": [
         {
-          "id": 13,
-          "name": "COATS AND JACKET",
-          "price": 1000000,
-          "images": "https://i.pinimg.com/736x/3a/2c/7b/3a2c7b13c0fff5be2ac5e8e4b60df743.jpg",
-          "maxStock": 13,
+          "id": 5,
+          "name": "NIKE AIR JORDAN",
+          "price": 2000000,
+          "images": "https://i.pinimg.com/564x/97/96/ed/9796edf9dcbd7899bb290ada1ec243a4.jpg",
           "qtyBuy": 1
         }
       ],
-      "favorite": [
-        {
-          "id": 3,
-          "name": "URBAN CASUAL FASHION WHITE BLACK SNEAKER",
-          "price": 1000000,
-          "images": "https://i.pinimg.com/564x/42/eb/5a/42eb5a9bf7909352ae790064498b4be0.jpg",
-          "maxStock": 9
-        },
-        {
-          "id": 4,
-          "name": "NIKE SNKRS",
-          "price": 2000000,
-          "images": "https://i.pinimg.com/564x/a6/f5/e9/a6f5e9aabebdedec1f4e397a5dd20c84.jpg",
-          "maxStock": 10
-        },
-        {
-          "id": 13,
-          "name": "COATS AND JACKET",
-          "price": 1000000,
-          "images": "https://i.pinimg.com/736x/3a/2c/7b/3a2c7b13c0fff5be2ac5e8e4b60df743.jpg",
-          "maxStock": 13
-        }
-      ],
+      "favorite": [],
       "id": 2
     }
   ],

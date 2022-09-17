@@ -21,6 +21,7 @@ export default function HomePages() {
     };
 
     const [products, setProducts] = useState([])
+    const [slider, setSlider] = useState([])
 
     // pagination
     const [page, setPage] = useState(1)
@@ -37,6 +38,10 @@ export default function HomePages() {
             .then(res => {
                 setProducts(res.data)
                 setMaxPage(Math.ceil(res.data.length / prodPerPage))
+            })
+        Axios.get(`${url}/slider`)
+            .then(res => {
+                setSlider(res.data)
             })
     }, [prodPerPage])
 
@@ -92,52 +97,28 @@ export default function HomePages() {
                         <Row>
                             <Col className="cont-carousel col-6">
                                 <Carousel activeIndex={index} onSelect={handleSelect}>
-                                    <Carousel.Item>
-                                        <img
-                                            className="carousel-img d-block w-100"
-                                            src="https://i.pinimg.com/564x/f2/ab/e5/f2abe5d9d2c659c5fcd0bfb89c010551.jpg"
-                                            alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                            className="carousel-img d-block w-100"
-                                            src="https://i.pinimg.com/736x/f3/d3/bd/f3d3bd4ad90fa46b2c1fe2b26b9e46f0.jpg"
-                                            alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                            className="carousel-img d-block w-100"
-                                            src="https://i.pinimg.com/564x/9c/e3/c5/9ce3c5a1b379ddc2570ae2fe6d489e36.jpg"
-                                            alt="Third slide"
-                                        />
-                                    </Carousel.Item>
+                                    {slider.map(item =>
+                                        <Carousel.Item>
+                                            <img
+                                                className="carousel-img d-block w-100"
+                                                src={item.img}
+                                                alt="First slide"
+                                            />
+                                        </Carousel.Item>
+                                    )}
                                 </Carousel>
                             </Col>
                             <Col className="col-6">
                                 <Carousel activeIndex={index} onSelect={handleSelect}>
-                                    <Carousel.Item>
-                                        <img
-                                            className="carousel-img d-block w-100"
-                                            src="https://i.pinimg.com/564x/f2/ab/e5/f2abe5d9d2c659c5fcd0bfb89c010551.jpg"
-                                            alt="First slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                            className="carousel-img d-block w-100"
-                                            src="https://i.pinimg.com/736x/f3/d3/bd/f3d3bd4ad90fa46b2c1fe2b26b9e46f0.jpg"
-                                            alt="Second slide"
-                                        />
-                                    </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img
-                                            className="carousel-img d-block w-100"
-                                            src="https://i.pinimg.com/564x/9c/e3/c5/9ce3c5a1b379ddc2570ae2fe6d489e36.jpg"
-                                            alt="Third slide"
-                                        />
-                                    </Carousel.Item>
+                                    {slider.map(item =>
+                                        <Carousel.Item>
+                                            <img
+                                                className="carousel-img d-block w-100"
+                                                src={item.img}
+                                                alt="First slide"
+                                            />
+                                        </Carousel.Item>
+                                    )}
                                 </Carousel>
                             </Col>
                         </Row>
