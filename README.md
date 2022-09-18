@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+FEATURES IN THIS APP
+1. Feature login, with error handling and using local storage
+2. Feature register, with error handling
+3. Feature view product details, by clicking on the product
+4. Feature to add product to favorite product list
+5. feature to add product to shopping cart
+6. checkout feature
+7. logout feature
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+END TO END LOGIN
+1. User goes to login page
+2. The user enters the username and password that was previously registered
+3. when the account data has never been registered, an error notification will appear that the account has never been registered
+4. when the account data is correct, it will be directed to the login page
+5. the difference before and after login, is in the navbar.
+   - if before logging in, the menu is "login" and "sign up"
+   - if after successfully logging in, the menu changes to the "user name", and "sign up"
 
-## Available Scripts
+END TO END SIGN UP
+1. User goes to register pages
+2. the user can input user data,
+3. if the user enters data that is not appropriate, a description will appear below it, about
+provisions of the data that must be input by the user
+4. if there is still an error and the user forces to sign up, an error notification will appear
+5. if the input is still empty, and still forces to signup, an error notification will appear
+6. When all the data is correct, the user will be directed to the login menu, to login
 
-In the project directory, you can run:
+END TO END ADD TO CART
+1. The user chooses which product to buy, by clicking on the product
+2. After that the user will be directed to the detail page menu, to view product details
+3. In the detail page, there is a menu
+    - to determine the stock of goods to be purchased (set Qty)
+    - add product to cart, (Add to Cart)
+    - add a product to the list of favorite products (Add to Favorite) and
+    - return to the shopping start page (Back to Shop)
+4. To add to the cart, the user can click the Add to Cart button
+5. To add to the list of favorite products, the user can click the Add to Favorite button
+6. If you don't buy the product, and want to choose something else, the user can click back to shop
+7. Or, the user can also choose the product offered below
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+END TO END CHECKOUT
+1. Users can enter the cart pages
+2. If the user has not logged in, then there will be an appeal for the user to login first to view the cart pages
+3. If the user is logged in, but has never added a product to the cart, there will be an appeal to add the product to the cart first.
+4. If the user has logged in and has added the product to the cart, a list of data on what products will be purchased will appear, and see the total price.
+5. users can also edit the list of cart lists.
+   - Remove items from the cart list
+   - edit the number of stock items to be purchased
+   - when you've done editing, the total price will also be automatically replaced
+6. After everything is finished the user can click the Checkout button
+7. A notification appears that the ordered goods will be processed,
+8. the list of products in the cart, becomes empty.
